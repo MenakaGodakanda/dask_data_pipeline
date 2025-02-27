@@ -57,9 +57,9 @@ pip install dask pandas numpy matplotlib pyarrow
   - Helps in analyzing processed results.
 
 - **PyArrow (`pyarrow`)**
-- A library for handling Apache Arrow columnar data format.
-- Improves the efficiency of data storage and memory operations.
-- Used in Dask to process large-scale data faster.
+  - A library for handling Apache Arrow columnar data format.
+  - Improves the efficiency of data storage and memory operations.
+  - Used in Dask to process large-scale data faster.
 
 ### 5. Running the Data Pipeline
 
@@ -68,6 +68,9 @@ Run the script to create a 1 million-row dataset for testing.
 ```
 python scripts/dummy_data.py
 ```
+- The generate file will save in `data/` folder.
+![Screenshot 2025-02-27 160639](https://github.com/user-attachments/assets/64b96871-eafd-405b-8fa7-8da8ca29606a)
+![Screenshot 2025-02-27 161116](https://github.com/user-attachments/assets/260bb3bc-3578-4675-ba23-7c4899bbcf76)
 
 #### Step 2: Run the Pipeline
 - You can manually run each script.
@@ -78,6 +81,7 @@ python scripts/dummy_data.py
 ```
 python scripts/data_ingestion.py
 ```
+![Screenshot 2025-02-27 161008](https://github.com/user-attachments/assets/7c08d762-1198-4dae-b499-d595c89e84b7)
 
 - **Data Processing (`data_processing.py`)**
   - Cleans data (drops missing values, converts types, and filters invalid values).
@@ -86,6 +90,7 @@ python scripts/data_ingestion.py
 ```
 python scripts/data_processing.py
 ```
+![Screenshot 2025-02-27 161024](https://github.com/user-attachments/assets/2e5d262d-02ae-4941-a207-a459a36e245a)
 
 - **Data Analysis (`data_analysis.py`)**
   - Generates bar charts to visualize aggregated results.
@@ -94,6 +99,8 @@ python scripts/data_processing.py
 ```
 python scripts/data_analysis.py
 ```
+![Screenshot 2025-02-27 161058](https://github.com/user-attachments/assets/7b08f36c-4b26-4a1f-aae2-bb33fa2cfd18)
+
 - A bar chart is generated showing the average value of column_x grouped by category_column (A, B, C, D).
 
 - Or automate the entire process using:
@@ -101,6 +108,7 @@ python scripts/data_analysis.py
 chmod +x run_pipeline.sh
 ./run_pipeline.sh
 ```
+![Screenshot 2025-02-27 161302](https://github.com/user-attachments/assets/ad753369-1f39-4e5e-8a8d-468588e1ae49)
 
 ## Project Structure
 ```
