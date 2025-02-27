@@ -101,7 +101,7 @@ python scripts/data_analysis.py
 ```
 ![Screenshot 2025-02-27 161058](https://github.com/user-attachments/assets/7b08f36c-4b26-4a1f-aae2-bb33fa2cfd18)
 
-- A bar chart is generated showing the average value of column_x grouped by category_column (A, B, C, D).
+- A bar chart is generated showing the average value of `column_x grouped` by `category_column` (A, B, C, D).
 
 - Or automate the entire process using:
 ```
